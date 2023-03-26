@@ -1,0 +1,114 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Page layout */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #currentDay {
+    font-size: 24px;
+  }
+  
+  /* Time blocks */
+  .time-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .hour {
+    flex: 0 0 100px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .description {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 18px;
+  }
+  
+  .past {
+    background-color: #d3d3d3;
+  }
+  
+  .present {
+    background-color: #ff6961;
+  }
+  
+  .future {
+    background-color: #77dd77;
+  }
+  
+  /* Save button */
+  .saveBtn {
+    flex: 0 0 80px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .saveBtn:hover {
+    background-color: #0069d9;
+  }
+  
+  /* Media queries */
+  @media (max-width: 767px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    .hour {
+      font-size: 16px;
+    }
+  
+    .description {
+      font-size: 16px;
+    }
+  
+    .saveBtn {
+      font-size: 16px;
+      flex: 0 0 70px;
+    }
+  }
+  
